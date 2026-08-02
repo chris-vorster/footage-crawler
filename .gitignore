@@ -1,0 +1,69 @@
+# Operating-system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors and local tooling
+.idea/
+.vscode/
+*.code-workspace
+*.swp
+*.swo
+*~
+.agents/
+.codex/
+.scratch/
+
+# Python environments and bytecode
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+.python_history
+
+# Test, coverage, lint, and type-checker caches
+.cache/
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.hypothesis/
+.mypy_cache/
+.pyright/
+.ruff_cache/
+.tox/
+.nox/
+
+# Builds and packaging output
+build/
+dist/
+*.egg-info/
+*.egg
+wheelhouse/
+pip-wheel-metadata/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.local
+
+# Runtime data, models, and logs
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
+*.log
+logs/
+models/
+thumbnails/
+
+# Local media used for development and manual testing
+videos/
