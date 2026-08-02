@@ -11,7 +11,7 @@ The project is directly inspired by **Van Neistat's [Footage Crawler](https://yo
 ## Demo
 
 <p align="center">
-  <img src="docs/demo.gif" alt="Footage Crawler searching a local video library for road with trees and returning visual matches" width="800">
+  <img src="docs/demo-hq.gif" alt="Footage Crawler searching a local video library for road with trees and returning visual matches" width="800">
 </p>
 
 ## Set up Footage Crawler
