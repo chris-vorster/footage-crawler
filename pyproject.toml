@@ -1,0 +1,37 @@
+[project]
+name = "footage-crawler"
+version = "0.1.0"
+description = "Private, local visual search for photo and video libraries"
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+  "huggingface-hub>=0.36,<2",
+  "numpy>=2.2,<3",
+  "pillow>=11.2,<13",
+  "pillow-heif>=1.0,<2",
+  "pyside6==6.11.1",
+  "torch>=2.7,<3",
+  "transformers>=5.0,<6",
+]
+
+[dependency-groups]
+dev = ["pytest>=8.4,<10"]
+
+[project.scripts]
+footage-crawler = "footage_search.app:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/footage_search"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"app_icon_rounded.icns" = "footage_search/assets/app_icon_rounded.icns"
+"app_icon_rounded.png" = "footage_search/assets/app_icon_rounded.png"
+"footage_crawler_logo.png" = "footage_search/assets/footage_crawler_logo.png"
+"header.png" = "footage_search/assets/header.png"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
