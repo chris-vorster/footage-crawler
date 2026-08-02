@@ -1,26 +1,14 @@
-<p align="center">
-  <a href="https://youtu.be/C8BsOTAol_o?si=PT3T88u75a3TdKuB&amp;t=1043">
-    <img src="https://img.youtube.com/vi/C8BsOTAol_o/maxresdefault.jpg" alt="Watch Van Neistat introduce the Footage Crawler concept, starting at 17:23" width="800">
-  </a>
-</p>
-<p align="center"><em>Watch the Footage Crawler concept in Van Neistat's video, starting at 17:23.</em></p>
-
-<p align="center">
-  <img src="docs/assets/footage-crawler-wordmark.png" alt="Footage Crawler in distressed black typewriter lettering on yellow" width="760">
-</p>
-
 # Footage Crawler
 
 Footage Crawler is a desktop app for finding moments in your own photo and video archive. Search for something such as “a red car driving at night”.
 
-The project is directly inspired by **Van Neistat's Footage Crawler** shown in the video above. It is an independent, open-source interpretation of that idea: private, local visual search for the footage already on your computer.
+The project is directly inspired by **Van Neistat's [Footage Crawler](https://youtu.be/C8BsOTAol_o?si=PT3T88u75a3TdKuB&t=1043)**. It is an independent, open-source interpretation of that idea: private, local visual search for the footage already on your computer.
 
 ## Demo
 
 <p align="center">
   <img src="docs/demo.gif" alt="Footage Crawler searching a local video library for road with trees and returning visual matches" width="800">
 </p>
-<p align="center"><em>A real search in the desktop app for “road with trees,” using an indexed local video library.</em></p>
 
 ## Set up Footage Crawler
 
@@ -32,7 +20,6 @@ You will need:
 
 - [uv](https://docs.astral.sh/uv/getting-started/installation/), which installs Python and the app's required software packages.
 - [FFmpeg](https://ffmpeg.org/download.html), if you want to search video files. Make sure both `ffmpeg` and `ffprobe` are available on your system path.
-- A stable internet connection for the initial setup and first model download.
 
 ### 2. Download this project
 
@@ -52,7 +39,7 @@ uv sync
 uv run footage-crawler
 ```
 
-When the app opens, it loads the visual search model before showing the library. On the first run it downloads a pinned copy (about 1.4 GB) into Footage Crawler's local application-data folder. Later launches open that installed copy directly and do not contact Hugging Face. Then follow the setup screen to choose the folders and media types you want to search.
+When the app opens, it loads the visual search model before showing the library. On the first run it downloads a pinned copy (about 1.4 GB) into Footage Crawler's local application-data folder. Then follow the setup screen to choose the folders and media types you want to search.
 
 Indexing a large archive can take time. You can pause it, resume it later, and use **Rescan** when you add or change footage.
 
@@ -86,8 +73,6 @@ If you would prefer hands-on help installing Footage Crawler or adapting it to a
 
 [Request personal setup help](https://tally.so/r/Y5XEOW)
 
-The short enquiry form is designed for non-technical users and is not posted publicly on GitHub. You will receive a private reply by email. Do not submit passwords, private footage, API keys, or other sensitive information.
-
 ## Current project status
 
 Footage Crawler currently supports:
@@ -102,5 +87,3 @@ Contributions and field reports are welcome.
 ## License
 
 Footage Crawler is available under the [GNU Affero General Public License v3.0](LICENSE).
-
-Implementation notes and the project language are documented in [CONTEXT.md](CONTEXT.md).
