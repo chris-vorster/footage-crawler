@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/assets/footage-crawler-wordmark.png" alt="Footage Crawler in distressed black typewriter lettering on yellow" width="760">
+</p>
+
 # Footage Crawler
 
 Footage Crawler is a desktop app for finding moments in your own photo and video archive. Search for something such as “a red car driving at night”.
